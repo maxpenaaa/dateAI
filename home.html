@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Movie Recommendation Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Movie Recommendation Quiz</h1>
+    <form action="/result" method="post">
+        <label for="genre">Favorite Genre:</label>
+        <input type="text" id="genre" name="genre" placeholder="Enter your favorite genre"><br>
+        <label for="favorite_movies">Favorite Movies (comma-separated):</label>
+        <input type="text" id="favorite_movies" name="favorite_movies" placeholder="Enter your favorite Movie"><br>
+        <label for="preferences">Additional Preferences:</label>
+        <input type="text" id="preferences" name="preferences" placeholder="Actors, Length setting etc. "><br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+    <a href="http://127.0.0.1:5000/">Back to Quizes</a>
+
+</body>
+</html>

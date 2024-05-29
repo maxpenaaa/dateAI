@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        li {
+            margin-bottom: 20px;  /* Adds 20px space below each list item */
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Movie Recommendations</h1>
+    <ul>
+        {% for movie in recommendations %}
+            <li>{{ movie }} </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Quiz</a>
+</body>
+</html>

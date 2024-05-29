@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Date Ideas Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Date Ideas Quiz</h1>
+    <form action="/date_ideas_result" method="post">
+        <label for="interests">Your interests:</label>
+        <input type="text" id="interests" name="interests" placeholder="Enter your interests"><br>
+        
+        <label for="dateType">Type of Date:</label>
+        <input type="text" id="dateType" name="dateType" placeholder="At home, Adventurous, Travel"><br>
+        
+        <label for="budget">Budget Range:</label>
+        <input type="text" id="budget" name="budget" placeholder="Enter your budget range"><br>
+        
+        <input type="submit" value="Get Date Ideas">
+    </form>
+    <a href="http://127.0.0.1:5000/">Back to Quizes</a>
+</body>
+</html>
